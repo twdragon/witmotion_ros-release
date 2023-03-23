@@ -1,0 +1,12 @@
+Source: ros-melodic-witmotion-ros
+Section: misc
+Priority: optional
+Maintainer: Andrey Vukolov <andrey.vukolov@elettra.eu>
+Build-Depends: debhelper (>= 9.0.0), libqt5serialport5-dev, ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-message-runtime, ros-melodic-nav-core, ros-melodic-nav-msgs, ros-melodic-roscpp, ros-melodic-rosgraph-msgs, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-tf2, ros-melodic-tf2-geometry-msgs
+Homepage: https://wiki.ros.org/witmotion_ros
+Standards-Version: 3.9.2
+
+Package: ros-melodic-witmotion-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5serialport5-dev, ros-melodic-geometry-msgs, ros-melodic-message-runtime, ros-melodic-nav-core, ros-melodic-nav-msgs, ros-melodic-roscpp, ros-melodic-rosgraph-msgs, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-tf2, ros-melodic-tf2-geometry-msgs
+Description: Standalone QT-based IMU/GPS decoder nodes for Witmotion UART-compatible sensor devices
