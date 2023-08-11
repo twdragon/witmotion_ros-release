@@ -4,29 +4,8 @@ Changelog for package witmotion_ros
 
 Forthcoming
 -----------
+* add ROS2 launch files
 * add MultiThreadedExecutor in witmotion_ros_node
-
-1.3.1 (2023-08-08)
---------------------
-* Fixed GPS decoder function in the underlying library (added x10 multiplier in Degrees section)
-* Version bump to 1.3.1
-* Community-driven test of the library on WTGAHRS1 combined enclosed IMU/GPS sensor module `<https://www.wit-motion.com/inertial-navigation/witmotion-wtgahrs1-10-axis-gps.html>` by Quing Joe Wong `joewong00`
-* Contributors: Andrey Vukolov, Quing Joe Wong
-
-1.3.0 (2023-06-14)
---------------------
-* Added support for serial port timeout behaviour (`timeout_ms`)
-* Updated README.md
-* Merged pull request `#27 <https://github.com/ElettraSciComp/witmotion_IMU_ros/pull/27>` from `gsokoll`
-* Version bump to 1.3.0
-* Matched versions for ROS node and underlying library after merging pull request `#7 <https://github.com/ElettraSciComp/witmotion_IMU_QT/pull/7>`
-
-1.2.28 (2023-03-21)
---------------------
-* Updated online documentation
-* Updated CMake build scenario to suppress useless Doxygen warning
-* Version bump to 1.2.28
-* Matched versions for ROS node and underlying library
 
 1.2.27 (2023-02-27)
 --------------------

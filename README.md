@@ -1,9 +1,4 @@
 # [Witmotion IMU sensor driver for ROS](https://wiki.ros.org/witmotion_ros)
-[![ROS1 CI](https://github.com/ElettraSciComp/witmotion_IMU_ros/actions/workflows/main.yml/badge.svg)](https://github.com/ElettraSciComp/witmotion_IMU_ros/actions/workflows/main.yml)
-|`focal-source`|`focal-amd64`|`focal-armhf`|`focal-arm64`|`dev`|`doc`|
-|--------------|-------------|-------------|-------------|-----|-----|
-|[![focal-source](http://build.ros.org/buildStatus/icon?job=Nsrc_uF__witmotion_ros__ubuntu_focal__source)](https://build.ros.org/view/Nsrc_uF/job/Nsrc_uF__witmotion_ros__ubuntu_focal__source)|[![focal-amd64](http://build.ros.org/buildStatus/icon?job=Nbin_uF64__witmotion_ros__ubuntu_focal_amd64__binary)](https://build.ros.org/view/Nbin_uF64/job/Nbin_uF64__witmotion_ros__ubuntu_focal_amd64__binary)|[![focal-armhf](http://build.ros.org/buildStatus/icon?job=Nbin_ufhf_uFhf__witmotion_ros__ubuntu_focal_armhf__binary)](https://build.ros.org/view/Nbin_ufhf_uFhf/job/Nbin_ufhf_uFhf__witmotion_ros__ubuntu_focal_armhf__binary)|[![focal-arm64](http://build.ros.org/buildStatus/icon?job=Nbin_ufv8_uFv8__witmotion_ros__ubuntu_focal_arm64__binary)](https://build.ros.org/view/Nbin_ufv8_uFv8/job/Nbin_ufv8_uFv8__witmotion_ros__ubuntu_focal_arm64__binary)|[![dev](http://build.ros.org/buildStatus/icon?job=Ndev__witmotion_ros-release__ubuntu_focal_amd64)](https://build.ros.org/view/Ndev/job/Ndev__witmotion_ros-release__ubuntu_focal_amd64)|[![doc](http://build.ros.org/buildStatus/icon?job=Ndoc__witmotion_ros-release__ubuntu_focal_amd64)](https://build.ros.org/view/Ndoc/job/Ndoc__witmotion_ros-release__ubuntu_focal_amd64)|
-
 `witmotion_ros` module implements a ROS 1 wrapper for [Witmotion IMU](https://github.com/ElettraSciComp/witmotion_IMU_QT) driver library. It reads the data from the family of TTL-compatible inertial pose estimation units (IMUs) manufactured by [WitMotion Shenzhen Co.,Ltd](https://www.wit-motion.com) publishing the information in ROS-native way using [`sensor_msgs`](http://wiki.ros.org/sensor_msgs) and [`std_msgs`](http://wiki.ros.org/std_msgs) message definition packages. The module is focused on read-only access, so calibration and bias regulation functions are implemented in the underlying library. Port access model is implemented in monopolistic way acccording to UNIX specification, so only one instance of the module can be executed for the dedicated virtual device.
 
 ## Datasheets and official documentation
@@ -44,7 +39,6 @@ Configuration of the node is done by default via the configuration YAML file [`c
 - `port` - the virtual kernel device name for a port, `ttyUSB0` by default
 - `baud_rate` - port rate value to be used by the library for opening the port, _9600 baud_ by default
 - `polling_interval` - the sensor polling interval in milliseconds. If this parameter is omitted, the default value is set up by the library (50 ms).
-- `timeout_ms` - the sensor timeout period in milliseconds.  If no data is received from the sensor after this period, then an error is raised and the node terminates. If this parameter is omitted, a default value of 3 times the polling interval is used.  If this parameter is zero, the timeout check is disabled.
 - `restart_service_name` - the service name used to restart the sensor connection after an error.
 - `imu_publisher:`
     - `topic_name` - the topic name for IMU data publisher, `imu` in the node's namespace by default
@@ -102,3 +96,4 @@ Configuration of the node is done by default via the configuration YAML file [`c
     - `enabled` - enables/disables realtime clock information decoder
     - `topic_name` - topic name for realtime clock publisher
     - `presync` - instructs the node to perform an attempt to pre-synchronize sensor's internal realtime clock
+

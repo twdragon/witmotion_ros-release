@@ -44,7 +44,6 @@ public:
     void Start();
     void SetLog(const QString name);
     void SetInterval(uint32_t ms);
-    void SetTimeout(uint32_t ms);
 public slots:
     void Packet(const witmotion_datapacket& packet);
     void Error(const QString& description);
