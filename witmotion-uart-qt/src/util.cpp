@@ -115,7 +115,7 @@ void decode_gps_coord(const int32_t *value,
                       double &deg,
                       double &min)
 {
-    deg = static_cast<double>(*value) / 100000000.f;
+    deg = static_cast<double>(*value) / 10000000.f;
     min = static_cast<double>((*value) % 10000000) / 100000.f;
 }
 
