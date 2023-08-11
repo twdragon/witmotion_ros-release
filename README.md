@@ -1,3 +1,26 @@
+## witmotion_ros (noetic) - 1.3.1-1
+
+The packages in the `witmotion_ros` repository were released into the `noetic` distro by running `/util/bin/bloom-release -r noetic witmotion_ros` on `Fri, 11 Aug 2023 17:15:10 -0000`
+
+The `witmotion_ros` package was released.
+
+Version of package(s) in repository `witmotion_ros`:
+
+- upstream repository: https://github.com/ElettraSciComp/witmotion_IMU_ros.git
+- release repository: https://github.com/twdragon/witmotion_ros-release.git
+- rosdistro version: `1.3.0-1`
+- old version: `1.3.0-1`
+- new version: `1.3.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## witmotion_ros (noetic) - 1.3.0-1
 
 The packages in the `witmotion_ros` repository were released into the `noetic` distro by running `/util/bin/bloom-release witmotion_ros --ros-distro noetic` on `Wed, 14 Jun 2023 16:48:23 -0000`
